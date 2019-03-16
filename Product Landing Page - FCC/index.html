@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Classic Albums</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
 </head>
@@ -10,23 +11,23 @@
 	<header id="header">
 		<!-- Icon made by Freepik from www.flaticon.com -->
 		<div class="logo">
-			<img src="img/albumLogo.png" alt="Classic Albums' Logo">
+			<img src="img/albumLogo.png" alt="Classic Albums' Logo" id="header-img">
 			<h1>Classic Albums</h1>
 		</div>
-		<nav id="navbar">
+		<nav id="nav-bar">
 			<ul>
-				<li><a href="#" class="nav-link">Contact</a></li>
-				<li><a href="#" class="nav-link">About</a></li>
-				<li><a href="#" class="nav-link">Pricing</a></li>
+				<li><a href="#form" class="nav-link">Contact</a></li>
+				<li><a href="#albums" class="nav-link">About</a></li>
+				<li><a href="#pricing" class="nav-link">Pricing</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<form action="https://www.freecodecamp.com/email-submit" id="form" >
 			<h2>Classic Albums that could be yours today!</h2>
-			<label for="email">Enter your email to contact us: </label>
-			<input type="email" placeholder="email@address.com" required/>
-			<input id="submit" value="Submit!" type="submit"/>
+			<label for="email"> Enter your email to contact us: </label>
+			<input type="email" id="email" placeholder="email@address.com" name="email" required/>
+			<input id="submit" value="Submit!" type="submit" />
 		</form>
 		<article id="albums">
 			<section>
@@ -106,6 +107,8 @@
 			</section>
 		</article>
 	</main>
-	<footer></footer>
+	<footer>
+		<p>&copy; Jacob LeBlanc - 2019 | made for freeCodeCamp.org and for personal use only</p>
+	</footer>
 </body>
 </html>
